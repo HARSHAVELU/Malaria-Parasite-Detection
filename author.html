@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors' Page</title>
+    <style>
+        body {
+            background-image: url("/static/5039684.jpg"); /* Path to the background image */
+            background-size: cover; /* Cover the entire background */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            font-family: Arial, sans-serif; /* Use Arial font */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Use flexbox to align boxes side by side */
+            justify-content: center; /* Center align the boxes horizontally */
+            align-items: center; /* Center align the boxes vertically */
+            flex-wrap: wrap; /* Allow wrapping of boxes if needed */
+            color: #ffffff; /* Default text color */
+        }
+
+        .author-box {
+            border: 2px solid #000080; /* Dark blue border */
+            padding: 20px;
+            margin: 20px;
+            background-color: #000080; /* Dark blue background */
+            color: #ffffff; /* White text color */
+            border-radius: 10px; /* Rounded corners */
+            width: 300px; /* Set fixed width for each box */
+        }
+
+        .corresponding {
+            background-color: #f0f8ff; /* Light blue background */
+            font-weight: bold;
+            color: #000000; /* Black text color */
+        }
+
+        /* Scrolling message animation */
+        .scrolling-message-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 20px;
+            z-index: 999; /* Ensure the message is above other content */
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+        .scrolling-message {
+            white-space: nowrap; /* Prevent text wrapping */
+            animation: scroll 20s linear infinite; /* Scroll animation */
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); } /* Start off-screen */
+            100% { transform: translateX(-100%); } /* Move to the left edge */
+        }
+    </style>
+</head>
+<body>
+    <div class="author-box">
+        <p>Harshavelu Irrigisetty<br>
+        UG Scholar, Department of CSE<br>
+        Sree Vidyanikethan Engineering College<br>
+        Sree Sainath Nagar, Tirupati,<br>
+        Andhra Pradesh, India<br>
+        *Corresponding author<br>
+        <a href="mailto:harshavelu1234@gmail.com">harshavelu1234@gmail.com</a></p>
+    </div>
+
+    <div class="author-box">
+        <p>Harinidevi Jonna<br>
+        UG Scholar, Department of CSE<br>
+        Sree Vidyanikethan Engineering College<br>
+        Sree Sainath Nagar, Tirupati,<br>
+        Andhra Pradesh, India<br>
+        <a href="mailto:jonnaharinidevi@gmail.com">jonnaharinidevi@gmail.com</a></p>
+    </div>
+
+    <div class="author-box">
+        <p>Maheswari Kurlapalli<br>
+        UG Scholar, Department of CSE<br>
+        Sree Vidyanikethan Engineering College<br>
+        Sree Sainath Nagar, Tirupati,<br>
+        Andhra Pradesh, India<br>
+        <a href="mailto:kurlapallimaheswari@gmail.com">kurlapallimaheswari@gmail.com</a></p>
+    </div>
+
+    <div class="author-box">
+        <p>Harshavardhan Reddy Gangadasari<br>
+        UG Scholar, Department of CSE<br>
+        Sree Vidyanikethan Engineering College<br>
+        Sree Sainath Nagar, Tirupati,<br>
+        Andhra Pradesh, India<br>
+        <a href="mailto:harshavardhanreddygangadasari@gmail.com">harshavardhanreddygangadasari@gmail.com</a></p>
+    </div>
+
+    <div class="author-box">
+        <p>Mr. V. Siva Prasad<br>
+        Assistant Professor<br>
+        Department of CSE<br>
+        Mohan Babu University<br>
+        Sree Sainath Nagar,Tirupati,<br>
+        Andhra Pradesh, India.<br>
+        <a href="mailto:Velurusiva.5817@gmail.com">Velurusiva.5817@gmail.com</a></p>
+    </div>
+
+    <div class="scrolling-message-container">
+        <div class="scrolling-message"> Thanks to Mr. V. Siva Prasad~ Our Project Guide for helping us throughout the project</div>
+    </div>
+</body>
+</html>
+

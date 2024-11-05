@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaria Detection Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('/static/05ca00d4-5e75-4b03-8ca9-2dca4e291202.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: blur(0.2px); /* Reduced blur effect */
+        }
+        .container {
+            text-align: center;
+        }
+        .result-box {
+            background-color: rgba(255, 0, 0, 0.9); /* Increased opacity for better visibility */
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); /* Increased box shadow for better visibility */
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Malaria Detection Result</h1>
+        <div class="result-box">
+            <p>{{result}}</p>
+        </div>
+    </div>
+</body>
+</html>
+

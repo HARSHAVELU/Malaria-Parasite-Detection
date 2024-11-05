@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Malaria Detection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        p {
+            margin-top: 20px;
+            text-align: justify;
+            max-width: 600px; /* Optional: Adjust the maximum width of the text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Malaria Detection</h1>
+        <p>Malaria remains a significant global health concern, with its debilitating effects on over 500,000 lives annually worldwide, and faces a lot of challenges stemming from delayed diagnoses, primarily attributed to the reliance on manual microscopy. Although effective, this is a more time-consuming method and susceptible to human error. Recognizing the severity of this global health crisis, there is an imperative to automate the evaluation process, eliminating the need for extensive human intervention. To tackle this issue, cutting-edge technologies, including CNN , transfer learning and Adaptive Boosting are being used in microscopic blood slides to evaluate parasitemia. Our innovative approach involves collecting images depicting infected and non-infected erythrocytes, which are then input into CNN models through rigorous preprocessing, specifically VGG16 in conjunction with transfer learning, the model can leverage knowledge gained from a broader dataset enhancing its ability to accurately classify malaria instances. While previous baseline papers using CNN encountered drawbacks related to sensitivity and reliance on large labeled datasets, our study addresses these limitations by incorporating transfer learning and achieving Post Adaptive Boost accuracy that surpasses 96%, ensuring a reliable performance malaria detection system and offering a more efficient and accurate alternative to manual microscopy.</p>
+    </div>
+</body>
+</html>
